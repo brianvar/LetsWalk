@@ -14,6 +14,11 @@
 		9005793829B3888E003D8BB1 /* LetsWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005793729B3888E003D8BB1 /* LetsWalkTests.swift */; };
 		9005794229B3888E003D8BB1 /* LetsWalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005794129B3888E003D8BB1 /* LetsWalkUITests.swift */; };
 		9005794429B3888E003D8BB1 /* LetsWalkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005794329B3888E003D8BB1 /* LetsWalkUITestsLaunchTests.swift */; };
+		901A5D7729B38C10000D4623 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A5D7629B38C10000D4623 /* LoginView.swift */; };
+		901A5D7A29B38C79000D4623 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 901A5D7929B38C79000D4623 /* RiveRuntime */; };
+		901A5D7C29B38CA0000D4623 /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A5D7B29B38CA0000D4623 /* LogoAnimationView.swift */; };
+		901A5D7F29B38D5D000D4623 /* LogoAnimation.riv in Resources */ = {isa = PBXBuildFile; fileRef = 901A5D7E29B38D5D000D4623 /* LogoAnimation.riv */; };
+		909EB0BF29B3951E009E9E69 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909EB0BE29B3951E009E9E69 /* AuthTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		9005793D29B3888E003D8BB1 /* LetsWalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsWalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9005794129B3888E003D8BB1 /* LetsWalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsWalkUITests.swift; sourceTree = "<group>"; };
 		9005794329B3888E003D8BB1 /* LetsWalkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsWalkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		901A5D7629B38C10000D4623 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		901A5D7B29B38CA0000D4623 /* LogoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
+		901A5D7E29B38D5D000D4623 /* LogoAnimation.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = LogoAnimation.riv; sourceTree = "<group>"; };
+		909EB0BE29B3951E009E9E69 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901A5D7A29B38C79000D4623 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +104,11 @@
 		9005792529B3888D003D8BB1 /* LetsWalk */ = {
 			isa = PBXGroup;
 			children = (
+				901A5D7D29B38D1B000D4623 /* RiveAssets */,
+				901A5D7329B38BE5000D4623 /* Models */,
+				901A5D7229B38BAE000D4623 /* DataServices */,
+				901A5D7129B38BA7000D4623 /* ViewModels */,
+				901A5D7029B38BA0000D4623 /* Views */,
 				9005792629B3888D003D8BB1 /* LetsWalkApp.swift */,
 				9005792829B3888D003D8BB1 /* ContentView.swift */,
 				9005792A29B3888E003D8BB1 /* Assets.xcassets */,
@@ -127,6 +142,61 @@
 			path = LetsWalkUITests;
 			sourceTree = "<group>";
 		};
+		901A5D7029B38BA0000D4623 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				901A5D7529B38BFB000D4623 /* Main */,
+				901A5D7429B38BF5000D4623 /* Auth */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		901A5D7129B38BA7000D4623 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		901A5D7229B38BAE000D4623 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+		901A5D7329B38BE5000D4623 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		901A5D7429B38BF5000D4623 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				901A5D7629B38C10000D4623 /* LoginView.swift */,
+				901A5D7B29B38CA0000D4623 /* LogoAnimationView.swift */,
+				909EB0BE29B3951E009E9E69 /* AuthTextField.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		901A5D7529B38BFB000D4623 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		901A5D7D29B38D1B000D4623 /* RiveAssets */ = {
+			isa = PBXGroup;
+			children = (
+				901A5D7E29B38D5D000D4623 /* LogoAnimation.riv */,
+			);
+			path = RiveAssets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +213,9 @@
 			dependencies = (
 			);
 			name = LetsWalk;
+			packageProductDependencies = (
+				901A5D7929B38C79000D4623 /* RiveRuntime */,
+			);
 			productName = LetsWalk;
 			productReference = 9005792329B3888D003D8BB1 /* LetsWalk.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +288,9 @@
 				Base,
 			);
 			mainGroup = 9005791A29B3888D003D8BB1;
+			packageReferences = (
+				901A5D7829B38C79000D4623 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = 9005792429B3888D003D8BB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901A5D7F29B38D5D000D4623 /* LogoAnimation.riv in Resources */,
 				9005792E29B3888E003D8BB1 /* Preview Assets.xcassets in Resources */,
 				9005792B29B3888E003D8BB1 /* Assets.xcassets in Resources */,
 			);
@@ -257,7 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901A5D7729B38C10000D4623 /* LoginView.swift in Sources */,
+				909EB0BF29B3951E009E9E69 /* AuthTextField.swift in Sources */,
 				9005792929B3888D003D8BB1 /* ContentView.swift in Sources */,
+				901A5D7C29B38CA0000D4623 /* LogoAnimationView.swift in Sources */,
 				9005792729B3888D003D8BB1 /* LetsWalkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +669,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		901A5D7829B38C79000D4623 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		901A5D7929B38C79000D4623 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 901A5D7829B38C79000D4623 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9005791B29B3888D003D8BB1 /* Project object */;
 }
