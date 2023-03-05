@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AuthTextField: View {
+struct IconTextField: View {
     public let label: String
     public var value: Binding<String>
     public let iconSystemName: String
@@ -31,7 +31,7 @@ struct AuthTextField: View {
             }
         }
         .padding()
-        .background(RoundedRectangle(cornerRadius: 5)
+        .background(RoundedRectangle(cornerRadius: 10)
             .foregroundColor(.gray.opacity(0.08)))
     }
 }
@@ -40,6 +40,6 @@ struct AuthTextField_Previews: PreviewProvider {
     @State static var text = ""
     
     static var previews: some View {
-        AuthTextField(label: "Enter text here...", value: $text, iconSystemName: "globe")
+        IconTextField(label: "Enter text here...", value: $text, iconSystemName: "globe")
     }
 }
